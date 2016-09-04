@@ -8,7 +8,13 @@ require('./bootstrap');
 
 $('.btn-add-to-cart').click((e) => {
     e.preventDefault();
-    let l = Ladda.create(e.delegateTarget);
+    const elem = e.delegateTarget;
+    const l = Ladda.create(e.delegateTarget);
+    const addUrl = $(elem).attr('href');
     l.start();
-    setTimeout(() => { l.stop(); }, 2000);
+    $.ajax(addUrl)
+        .done((resp) => {
+            $('#navbar-cart-count').text(resp.qty);
+            l.stop();
+        });
 });
