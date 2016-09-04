@@ -1,0 +1,33 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/ladda/css/ladda";
+
+.thumbnail > img {
+  max-height: 275px;
+}
+
+.pricing-buttons {
+  margin-top: 20px;
+}
+
+.list-group-item-text {
+  min-height: 200px;
+}
+
+h4.list-group-item-heading {
+  margin-top: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  min-height: 40px;
+}
+
+#navbar-cart-count {
+    margin-left: 10px;
+}
