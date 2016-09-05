@@ -15,3 +15,8 @@ Route::get('/', "ProductsController@index");
 
 Route::get('/cart', "CartController@index");
 Route::get('/cart/add/{id}', "CartController@add");
+Route::get('/cart/destroy', "CartController@destroy");
+Route::get('/cart/remove/{rowId}', "CartController@remove");
+Route::post('/cart/update', "CartController@update");
+Route::get('/checkout', "CheckoutController@index");
+Route::post('/checkout/payment', "CheckoutController@payment");

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1e305e9e000f4c36348e6d2d5fea053c",
-    "content-hash": "e476143a3f501348b24f457a2680fdf9",
+    "hash": "db073abbe3328a52605aed6279b78d7b",
+    "content-hash": "8e58c55ecc162d1ee164ca6144dbc5aa",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -162,17 +162,65 @@
             "time": "2015-11-06 14:35:42"
         },
         {
+            "name": "ebanx/ebanx",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ebanx-integration/ebanx-php.git",
+                "reference": "53a3720d380128c012b931b39333e4b17b5661a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ebanx-integration/ebanx-php/zipball/53a3720d380128c012b931b39333e4b17b5661a4",
+                "reference": "53a3720d380128c012b931b39333e4b17b5661a4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "ext-xdebug": ">=2.2",
+                "phpunit/phpunit": "4.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Ebanx": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Gustavo Henrique Mascarenhas Machado",
+                    "email": "guhemama@gmail.com"
+                }
+            ],
+            "description": "EBANX PHP library",
+            "homepage": "https://ebanx.com",
+            "keywords": [
+                "api",
+                "ebanx",
+                "payment processing"
+            ],
+            "time": "2016-05-03 16:49:36"
+        },
+        {
             "name": "gloudemans/shoppingcart",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crinsane/LaravelShoppingcart.git",
-                "reference": "c827ff25c38cdf3e3919f0fc756a620976d88522"
+                "reference": "476f248e8d2848a97ab6f9a94fecd9741171605b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crinsane/LaravelShoppingcart/zipball/c827ff25c38cdf3e3919f0fc756a620976d88522",
-                "reference": "c827ff25c38cdf3e3919f0fc756a620976d88522",
+                "url": "https://api.github.com/repos/Crinsane/LaravelShoppingcart/zipball/476f248e8d2848a97ab6f9a94fecd9741171605b",
+                "reference": "476f248e8d2848a97ab6f9a94fecd9741171605b",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +257,7 @@
                 "laravel",
                 "shoppingcart"
             ],
-            "time": "2016-08-28 04:56:25"
+            "time": "2016-09-05 06:26:29"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -3476,7 +3524,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "gloudemans/shoppingcart": 20
+        "gloudemans/shoppingcart": 20,
+        "ebanx/ebanx": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

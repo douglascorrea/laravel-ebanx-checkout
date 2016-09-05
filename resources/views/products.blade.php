@@ -27,6 +27,11 @@
                 </div>
                 @endforeach
         </div>
+        <div class="row">
+            <div class="col-md-1 col-md-offset-9 col-xs-2 col-xs-offset-8">
+                <a href="/checkout" class="btn btn-info btn-lg">View Cart</a>
+            </div>
+        </div>
     </div>
 
 @stop
